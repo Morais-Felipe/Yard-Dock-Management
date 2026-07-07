@@ -40,6 +40,10 @@ public class OperacaoRepository {
         return removido;
     }
 
+    public List<Operacao> listarTodos() {
+        return new ArrayList<>(operacoes);
+    }
+
     //busca por operacoes ativas por tipo
     public List<Operacao> listarAtivasPorTipo(TipoOperacao tipo){
         return operacoes.stream()
