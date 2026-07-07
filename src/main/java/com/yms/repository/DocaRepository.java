@@ -37,7 +37,7 @@ public class DocaRepository {
         return removido;
     }
 
-    public List<Doca> listarTodos(int numeroDoca){
+    public List<Doca> listarTodos(){
         return new ArrayList<>(docas);
     }
 

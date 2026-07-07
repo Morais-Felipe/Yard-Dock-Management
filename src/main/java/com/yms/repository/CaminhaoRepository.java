@@ -20,7 +20,7 @@ public class CaminhaoRepository {
 
     //salva ou att um caminhao
     //se ja houver mesma placa -> substituir. Se não, adiciona
-    public void Salvar(Caminhao caminhao){
+    public void salvar(Caminhao caminhao){
         //remove existente (se houver)
         caminhoes.removeIf(c -> c.getPlaca().equals(caminhao.getPlaca()));
         caminhoes.add(caminhao);
